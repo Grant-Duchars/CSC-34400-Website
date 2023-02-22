@@ -1,3 +1,11 @@
-.background-color {
-    color:#343a40
+html {
+    background-color: #343a40;
+    color: #A6E7F2;
+}
+
+main {
+    align-content: center;
+    text-align: center;
+    background-color: #343a40;
+    color: #A6E7F2;
 }
