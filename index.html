@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
-    <main>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="images/Artboard 1_2.png"
-            width="200"
-            height="100"
-            class="d-inline-block align-top"
-            alt=""
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Free Consultation</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1>Clear. Creative. Competitive</h1>
-    </main>
-  </body>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+          width: auto;
+          margin: auto;
+        }
+        </style>
+      </head>
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html"><img src="images/Artboard 1_2.png" width="200" height="100" class="d-inline-block align-top" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <h1>Clear. Creative. Competitive</h1>
+            <div class="container">
+              <br>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+            
+                  <div class="item active">
+                    <img src="images/2.png" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                      <p></p>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <img src="images/2.png" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                      <p></p>
+                    </div>
+                  </div>
+                
+                  <div class="item">
+                    <img src="images/2.png" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                      <p></p>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <img src="images/2.png" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3></h3>
+                      <p></p>
+                    </div>
+                  </div>
+              
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+        </main>
+    </body>
 </html>
