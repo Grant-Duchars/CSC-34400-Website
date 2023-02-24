@@ -1,11 +1,20 @@
 html {
-    background-color: #343a40;
-    color: #A6E7F2;
+  background-color: #343a40;
+  color: #a6e7f2;
 }
 
 main {
-    align-content: center;
-    text-align: center;
-    background-color: #343a40;
-    color: #A6E7F2;
+  font-family: "Righteous", cursive;
+  align-content: center;
+  text-align: center;
+  background-color: #343a40;
+  color: #a6e7f2;
+}
+
+h1 {
+  font-size: 40em;
+}
+
+h3 {
+  font-family: "Righteous", cursive;
 }
