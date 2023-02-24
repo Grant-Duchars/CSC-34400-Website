@@ -1,20 +1,28 @@
+:root {
+  --background-color: rgb(52, 58, 64);
+  --primary-color: rgb(166, 231, 242);
+  --accent-color: rgb(87, 204, 153);
+}
+
 html {
-  background-color: #343a40;
-  color: #a6e7f2;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 2rem;
+  padding-top: 0rem;
 }
 
 main {
   font-family: "Righteous", cursive;
   align-content: center;
   text-align: center;
-  background-color: #343a40;
-  color: #a6e7f2;
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 h1 {
-  font-size: 40em;
+  font-size: 5rem;
 }
 
 h3 {
-  font-family: "Righteous", cursive;
+  font-family: "Fira Sans", sans-serif;
 }
