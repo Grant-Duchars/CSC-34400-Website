@@ -21,8 +21,49 @@ main {
 
 h1 {
   font-size: 5rem;
+  margin-bottom: 0.5em;
 }
 
-h3 {
+h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+p {
   font-family: "Fira Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+}
+
+#about-title {
+  text-align: left;
+}
+
+.content-wrapper {
+  margin: 18em;
+  margin-top: 4em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.custom-nav {
+  font-family: "Righteous", cursive;
+}
+
+.custom-nav a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
 }
