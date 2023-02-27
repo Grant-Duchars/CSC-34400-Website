@@ -34,6 +34,7 @@ p {
 }
 
 .content-wrapper {
+  background-color: var(--background-color);
   margin-top: 4em;
 }
 
