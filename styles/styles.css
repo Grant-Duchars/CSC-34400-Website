@@ -4,25 +4,20 @@
   --accent-color: rgb(87, 204, 153);
 }
 
-html {
-  background-color: var(--background-color);
-  color: var(--primary-color);
-}
-
 main {
-  font-family: "Righteous", cursive;
-  align-content: center;
   text-align: center;
   background-color: var(--background-color);
   color: var(--primary-color);
 }
 
 h1 {
+  font-family: "Righteous", cursive;
   font-size: 5rem;
   margin-bottom: 0.5em;
 }
 
 h2 {
+  font-family: "Righteous", cursive;
   font-size: 3rem;
   margin-bottom: 0.5em;
 }
@@ -61,22 +56,8 @@ p {
 }
 
 .content-wrapper {
-  margin: 18em;
+  background-color: var(--background-color);
   margin-top: 4em;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 
 .custom-nav {
