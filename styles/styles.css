@@ -125,6 +125,14 @@ p {
     opacity: 1;
   }
 }
+.cardAnima {
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+}
+.cardAnima:hover {
+  top: -10px;
+}
 
 @media only screen and (min-width: 992px) {
   .underline {
