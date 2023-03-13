@@ -156,3 +156,10 @@ p {
     background: var(--accent-color);
   }
 }
+@media only screen and (max-width: 991px) {
+  nav a {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
