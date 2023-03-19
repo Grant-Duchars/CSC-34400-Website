@@ -2,6 +2,7 @@
   --background-color: rgb(52, 58, 64);
   --primary-color: rgb(166, 231, 242);
   --accent-color: rgb(87, 204, 153);
+  --light-gray: rgb(72, 78, 84);
 }
 
 main {
@@ -143,4 +144,16 @@ p {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+}
+
+.forum-topic {
+  padding: 1rem;
+  border-radius: 25px;
+  background: var(--light-gray);
+}
+
+.forum-topic h2 {
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
 }
