@@ -147,7 +147,8 @@ p {
 }
 
 .forum-topic {
-  padding: 1rem;
+  margin: 1rem;
+  padding: 2rem;
   border-radius: 25px;
   background: var(--light-gray);
 }
