@@ -3,92 +3,77 @@
   <head>
     <title>Subzero Software | Home</title>
     <meta charset="UTF-8" />
+    <!-- Bootstrap CSS Import -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap JS Import -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    <!-- Font Awesome Import -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Global Style Sheet -->
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <main class="px-5 pb-5 pt-5">
-      <header>
-        <nav class="navbar navbar-expand-lg custom-nav">
-          <div
-            class="container-fluid d-lg-flex justify-content-lg-between mb-5"
+    <header id="nav-header" class="px-5 pb-5 pt-5">
+      <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid d-lg-flex justify-content-lg-between mb-5">
+          <!-- Navbar Logo -->
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/Artboard 1_2.png" class="logo" alt="" />
+          </a>
+          <!-- Navbar Hamburger Menu -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            aria-current="page"
           >
-            <a class="navbar-brand" href="index.html"
-              ><img src="images/Artboard 1_2.png" class="logo" alt=""
-            /></a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars" style="color: rgb(166, 231, 242)"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item px-3">
-                  <a
-                    class="nav-link underline p-0 m-0"
-                    aria-current="page"
-                    href="#"
-                    >Projects</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link underline p-0 m-0" href="#">About Us</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link underline p-0 m-0" href="contact.html"
-                    >Contact</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link underline p-0 m-0" href="#"
-                    >Free Consultation</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <i class="fa-solid fa-bars" style="color: rgb(166, 231, 242)"></i>
+          </button>
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link underline p-0 m-0" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link underline p-0 m-0" href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link underline p-0 m-0" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link underline p-0 m-0" href="forum.html"
+                  >Forum</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
+    <main class="px-5 pb-5 pt-5">
       <div class="container mt-5 d-flex justify-content-center">
         <div class="row">
           <div class="column">
@@ -168,95 +153,43 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <!-- Cards Section -->
             <h2 class="py-5">One platform, for all services.</h2>
             <div class="container d-flex flex-wrap justify-content-evenly py-5">
-              <a href="#" style="text-decoration: none">
-                <div
-                  class="card cardAnima"
-                  style="
-                    width: 18rem;
-                    background-color: rgb(52, 58, 64);
-                    border: none;
-                  "
-                >
-                  <div>
-                    <img
-                      class="card-img-top"
-                      src="images/frontend.svg"
-                      style="height: 7vw"
-                      alt="Card image cap"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title fs-2">Front-End Design</h3>
-                  </div>
-                </div></a
-              >
-              <a href="#" style="text-decoration: none">
-                <div
-                  class="card d-flex justify-content-center cardAnima"
-                  style="
-                    width: 18rem;
-                    background-color: rgb(52, 58, 64);
-                    border: none;
-                  "
-                >
-                  <div>
-                    <img
-                      class="card-img-top text-center"
-                      src="images/backend.svg"
-                      style="height: 7vw"
-                      alt="Card image cap"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title fs-2">Back-End Development</h3>
-                  </div>
-                </div></a
-              >
-              <a href="#" style="text-decoration: none">
-                <div
-                  class="card d-flex justify-content-center cardAnima"
-                  style="
-                    width: 18rem;
-                    background-color: rgb(52, 58, 64);
-                    border: none;
-                  "
-                >
-                  <div>
-                    <img
-                      class="card-img-top"
-                      src="images/template.svg"
-                      style="height: 7vw"
-                      alt="Card image cap"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title fs-2">Template Design</h3>
-                  </div>
-                </div></a
-              >
-              <a href="#" style="text-decoration: none">
-                <div
-                  class="card d-flex justify-content-center cardAnima"
-                  style="
-                    width: 18rem;
-                    background-color: rgb(52, 58, 64);
-                    border: none;
-                  "
-                >
-                  <img
-                    class="card-img-top"
-                    src="images/reviews.svg"
-                    style="height: 7vw"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title fs-2">Reviews and Feedback</h3>
-                  </div>
-                </div></a
-              >
+              <div class="card card-anima">
+                <img
+                  class="card-img-top card-image"
+                  src="images/frontend.svg"
+                  alt=""
+                />
+                <a href="#" class="card-title fs-2">Front-End Design</a>
+              </div>
+              <div class="card d-flex justify-content-center card-anima">
+                <img
+                  class="card-img-top card-image"
+                  src="images/backend.svg"
+                  alt=""
+                />
+                <a href="#" class="card-title fs-2">Back-End Development</a>
+              </div>
+              <div class="card d-flex justify-content-center card-anima">
+                <img
+                  class="card-img-top card-image"
+                  src="images/template.svg"
+                  alt=""
+                />
+                <a href="#" class="card-title fs-2">Template Design</a>
+              </div>
+              <div class="card d-flex justify-content-center card-anima">
+                <img
+                  class="card-img-top card-image"
+                  src="images/reviews.svg"
+                  alt=""
+                />
+                <a href="#" class="card-title fs-2">Reviews and Feedback</a>
+              </div>
             </div>
+            <!-- About Section -->
             <h2 id="about-title" class="pt-5">Who We Are</h2>
             <p class="pb-5">
               Our mission is to provide you with
@@ -298,13 +231,12 @@
                 </div>
               </div>
               <div class="col-auto">
-                <button type="submit" class="fs-5 button">Subscribe</button>
+                <button type="submit" class="fs-5 btn">Subscribe</button>
               </div>
             </div>
           </form>
         </section>
       </div>
-
       <div
         class="d-flex justify-content-between align-items-center p-3 px-5"
         style="background-color: rgba(0, 0, 0, 0.2)"
@@ -350,14 +282,5 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/31439b266a.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
