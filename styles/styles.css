@@ -1,9 +1,18 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Righteous&display=swap");
+
 :root {
+  /* Color Vars */
   --background-color: rgb(52, 58, 64);
   --primary-color: rgb(166, 231, 242);
   --accent-color: rgb(87, 204, 153);
+  --light-gray: rgb(72, 78, 84);
+  /* Font Vars */
+  --font-title: "Righteous", cursive;
+  --font-text: "Fira Sans", sans-serif;
 }
 
+/* General Styling */
 main {
   text-align: center;
   background-color: var(--background-color);
@@ -11,36 +20,30 @@ main {
 }
 
 h1 {
-  font-family: "Righteous", cursive;
+  font-family: var(--font-title);
   font-size: 5rem;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-family: "Righteous", cursive;
+  font-family: var(--font-title);
   font-size: 3rem;
   margin-bottom: 0.5em;
 }
-.card-title {
-  color: var(--accent-color);
-}
-.logo {
-  width: 300px;
-  height: auto;
-}
 
 p {
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-text);
   font-size: 2rem;
   color: white;
   text-align: left;
 }
 
-#about-title {
-  text-align: left;
+a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-.button {
+.btn {
   background: none;
   color: white;
   border: 2px solid white;
@@ -48,23 +51,26 @@ p {
   padding-inline: 8px;
   border-radius: 5px;
   transition-duration: 0.4s;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-text);
 }
-.button:hover {
+.btn:hover {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
 }
+/* End General Styling */
 
-.content-wrapper {
+/* Navbar Stuff */
+#nav-header {
   background-color: var(--background-color);
-  margin-top: 4em;
 }
 
-.custom-nav {
-  font-family: "Righteous", cursive;
+.logo {
+  width: 300px;
+  height: auto;
 }
 
 .custom-nav a {
+  font-family: var(--font-title);
   font-size: 1.5rem;
   color: var(--primary-color);
   text-decoration: none;
@@ -75,44 +81,12 @@ p {
   color: var(--accent-color);
 }
 
-#toggle {
-  display: block;
-}
-
-.bottomSpacer {
-  margin-bottom: 40px;
-}
-
-#clear {
-  animation: 0.75s ease 0.25s forwards titleAnimation;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-#creative {
-  animation: 0.75s ease 1s forwards titleAnimation;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-#complete {
-  animation: 0.75s ease 1.75s forwards titleAnimation;
-  animation-iteration-count: 1;
-  opacity: 0;
-}
-
-@keyframes titleAnimation {
-  to {
-    opacity: 1;
+@media only screen and (max-width: 991px) {
+  nav a {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
-}
-.cardAnima {
-  position: relative;
-  top: 0;
-  transition: top ease 0.25s;
-}
-.cardAnima:hover {
-  top: -10px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -137,10 +111,74 @@ p {
     background: var(--accent-color);
   }
 }
-@media only screen and (max-width: 991px) {
-  nav a {
-    font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+/* End Navbar Stuff */
+
+/* ***** Start index.html Stuff ***** */
+/* Animated Motto Stuff */
+@keyframes titleAnimation {
+  to {
+    opacity: 1;
   }
 }
+
+#clear {
+  animation: 0.75s ease 0.25s forwards titleAnimation;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+#creative {
+  animation: 0.75s ease 1s forwards titleAnimation;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+#complete {
+  animation: 0.75s ease 1.75s forwards titleAnimation;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+/* Card Stuff */
+.card-title {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.card-image {
+  height: 7vw;
+}
+
+.card-anima {
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+  width: 18rem;
+  background-color: rgb(52, 58, 64);
+  border: none;
+}
+.card-anima:hover {
+  top: -10px;
+}
+
+/* About Section Stuff */
+#about-title {
+  text-align: left;
+}
+/* ***** End index.html Stuff ***** */
+
+/* ***** Start forum.html Stuff ***** */
+.forum-topic {
+  border-radius: 25px;
+  background: var(--light-gray);
+}
+
+.popper {
+  position: relative;
+  transition: transform 0.5s ease;
+}
+.popper:hover {
+  transform: scale(1.025, 1.025);
+  border: 2px solid var(--accent-color);
+}
+/* ***** End forum.html Stuff */
