@@ -13,6 +13,11 @@
 }
 
 /* General Styling */
+html,
+body {
+  background-color: var(--background-color);
+}
+
 main {
   text-align: center;
   background-color: var(--background-color);
@@ -31,7 +36,8 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-p {
+main p,
+footer p {
   font-family: var(--font-text);
   font-size: 2rem;
   color: white;
@@ -65,7 +71,8 @@ a {
 }
 
 .logo {
-  width: 300px;
+  max-width: 20vw;
+  min-width: 250px;
   height: auto;
 }
 
@@ -182,3 +189,60 @@ a {
   border: 2px solid var(--accent-color);
 }
 /* ***** End forum.html Stuff */
+
+/* ***** Bootstrap Breakpoints ***** */
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  nav a {
+    text-align: center;
+  }
+  nav p {
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+  }
+  .navbar-toggler {
+    padding: none;
+    margin: none;
+  }
+  button {
+    z-index: 102;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    z-index: 101;
+    top: 0%;
+    width: 100%;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  #navbarSupportedContent i {
+    align-items: end;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  nav p {
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+  }
+  #navbarSupportedContent {
+    position: relative;
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
