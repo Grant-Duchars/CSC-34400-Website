@@ -13,6 +13,9 @@
 }
 
 /* General Styling */
+html {
+  height: 100%;
+}
 body {
   background-color: var(--background-color);
   height: 100%;
@@ -225,6 +228,9 @@ a {
   #navbarSupportedContent i {
     align-items: end;
   }
+  .short main {
+    margin-bottom: 700px;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -242,6 +248,9 @@ a {
     position: relative;
     border-bottom: none;
     box-shadow: none;
+  }
+  .short main {
+    margin-bottom: 0px;
   }
 }
 
